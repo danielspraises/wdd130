@@ -17,7 +17,7 @@
   "editor.parameterHints.enabled": false,
   "editor.suggestOnTriggerCharacters": false,
   "editor.hover.enabled": false,
-  "editor.inlineSuggest.enabled": false,
+  "editor.inlineSuggest.enabled": true,
   
   // Git settings for beginners - simplify source control
   "git.enableSmartCommit": true, // automatically staged
@@ -42,5 +42,9 @@
   // Live and Live/Five Server settings
   "fiveServer.port": 5501,
   "fiveServer.injectBody": false,
-  "liveServer.settings.port": 5504
+  "liveServer.settings.port": 5504,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.chat.codesearch.enabled": false
 }
