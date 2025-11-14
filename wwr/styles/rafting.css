@@ -1,8 +1,9 @@
 :root {
   --primary-color: #0a5c8f; /* Deep Luxury Blue */
   --secondary-color: #1b9fa7; /* Aquatic Teal */
-  --accent1-color: #d4a64a; /* Luxury Gold */
+  --accent1-color: #494b4a; /* Charcoal Gray */
   --accent2-color: #062b3c; /* Dark Navy */
+  --accent3-color: #d4a64a; /* Accent Gold */
 
   --heading-font: "Playfair Display", serif;
   --body-font: "Montserrat", sans-serif;
@@ -27,18 +28,22 @@ body {
   color: var(--accent1-color);
 }
 
-/* header, */
-/* footer, */
-main {
-  max-width: 840px;
+header,
+main,
+footer {
+  width: 840px;
   margin: 0 auto;
 }
 
 h1,
 h2,
 h3 {
-  color: var(--primary-color);
+  background-color: var(--primary-color);
   font-family: var(--heading-font);
+  text-align: center;
+  margin: 16px 0;
+  color: aliceblue;
+  padding: 8px;
 }
 
 nav,
@@ -47,6 +52,7 @@ section,
 article {
   margin: 16px;
   padding: 8px;
+  color: ;
 }
 
 .socialmedia a {
@@ -59,19 +65,36 @@ article {
   width: 100%;
 }
 
-.h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
   padding: 16px;
   text-align: center;
   opacity: 0.7;
-  background-color: #ffffff;
+  background-color: var(--accent3-color);
+  color: white;
 }
 
 .hero article img {
   float: right;
   width: 125px;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: var(--accent2-color);
+  padding: 16px;
+  border-radius: 8px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.hero {
+  position: relative;
 }
 
 nav a {
