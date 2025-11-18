@@ -16,11 +16,20 @@
 
 /* Header */
 header {
-  background-color: var(--primary-color); /* Deep Ocean Blue background */
-  color: var(--accent1-color); /* Gold text */
-  padding: 1rem 0;
-  text-align: center;
-  font-family: var(--heading-font);
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  padding: 1rem;
+  width: 840px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 150px 1fr; /* Logo left, nav right */
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 body {
@@ -105,7 +114,58 @@ article {
 }
 
 /* Navigation links */
-nav a {
+header nav a {
   color: #fff; /* White text for nav links */
   text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--accent1-color);
+  padding: 6px 12px;
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.figure-adventure {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+figure img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  transition: ease-in-out;
+  cursor: pointer;
+}
+
+figure img:hover {
+  margin-top: -10px;
+  transition: all;
+  transition-duration: 0.3s;
+}
+
+.history {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.history img {
+  max-width: 250px;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+footer img {
+  max-width: 20px;
+}
+
+footer p {
+  color: #fff;
 }
