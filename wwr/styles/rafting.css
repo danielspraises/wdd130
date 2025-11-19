@@ -105,8 +105,11 @@ article {
   background-color: var(--secondary-color); /* Aqua Teal box */
   padding: 16px;
   border-radius: 8px;
-  color: var(--accent1-color); /* Gold text inside box */
   opacity: 0.9;
+}
+
+.hero article p {
+  color: #fff; /* White text for readability */
 }
 
 .hero {
@@ -115,12 +118,12 @@ article {
 
 /* Navigation links */
 header nav a {
-  color: #fff; /* White text for nav links */
   text-decoration: none;
   font-weight: 600;
   border: 1px solid var(--accent1-color);
   padding: 6px 12px;
   background-color: #fff;
+  color: var(--primary-color);
 }
 
 .figure-adventure {
