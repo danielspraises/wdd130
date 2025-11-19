@@ -102,7 +102,7 @@ article {
   bottom: 20px;
   left: 20px;
   right: 20px;
-  background-color: var(--secondary-color); /* Aqua Teal box */
+  background-color: var(--accent2-color); /* Navy background */
   padding: 16px;
   border-radius: 8px;
   opacity: 0.9;
