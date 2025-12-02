@@ -271,6 +271,8 @@ form textarea {
   transition: background-color 0.3s ease;
   width: 100%;
   margin: 5px 0px;
+  font-family: inherit;
+  font-weight: bold;
 }
 
 .contact-form button[type="submit"]:hover {
@@ -300,11 +302,153 @@ form textarea {
   background-color: #f9f9f9;
   padding: 0px;
   border-radius: 8px;
-  padding: 0px 5px;
+  padding: 10px;
 }
 
 .employee-grid {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta a {
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--accent1-color);
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  display: inline-block;
+  margin: 10px 0;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+  background-color: var(--primary-color);
+}
+
+.home-grid {
+  display: flex;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.home-grid p {
+  margin: 0;
+  text-align: center;
+}
+
+.home-grid img {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.home-grid img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ==============================
+   TRIPS PAGE STYLES
+================================*/
+
+/* CTA SECTION */
+.trip-cta {
+  text-align: center;
+  padding: 2rem;
+  background: var(--secondary-color);
+  color: white;
+  margin: 2rem auto;
+  border-radius: 10px;
+  width: 90%;
+}
+
+.trip-cta p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.trip-cta .cta-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 25px;
+  background: var(--accent1-color);
+  color: black;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.trip-cta .cta-btn:hover {
+  background: white;
+  color: var(--primary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* TRIPS GRID */
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+}
+
+.trip-card {
+  text-align: center;
+  background: #f6f6f6;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card:hover {
+  background: #eee;
+  transition: background-color 0.3s ease;
+}
+
+.trip-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* TRIPS TABLE */
+.trip-table {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.trip-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.trip-table th {
+  background: var(--primary-color);
+  color: white;
+}
+
+.trip-table tr:nth-child(even) {
+  background: #eee;
+}
+.trip-table tr:hover {
+  background: var(--secondary-color);
+  color: white;
 }
