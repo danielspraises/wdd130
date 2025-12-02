@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #0a4d78; /* Deep Ocean Blue */
+  --primary-color: #05716a; /* Deep Ocean Blue */
   --secondary-color: #068a81; /* Refined Aqua Teal */
-  --accent1-color: #d4a64a; /* Luxury Gold */
+  --accent1-color: #f8c05a; /* Luxury Gold */
   --accent2-color: #062b3c; /* Navy Depth */
 
   --heading-font: "Playfair Display", serif;
@@ -136,14 +136,13 @@ figure img {
   max-width: 150px;
   height: auto;
   border-radius: 10px;
-  transition: ease-in-out;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 figure img:hover {
-  margin-top: -10px;
-  transition: all;
-  transition-duration: 0.3s;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .history {
@@ -170,4 +169,142 @@ footer img {
 
 footer p {
   color: #fff;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe {
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+}
+/* 
+form {
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
+}
+form label {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+form input,
+form textarea {
+  padding: 8px;
+  border: 1px solid var(--accent2-color);
+  border-radius: 4px;
+} */
+
+/* ===========================
+   CONTACT FORM STYLES
+=========================== */
+
+.contact-form {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form layout */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Labels */
+.contact-form label {
+  font-weight: bold;
+  margin: 0.3rem 0;
+}
+
+/* Inputs & Textareas */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
+/* Radio buttons layout */
+.contact-form p {
+  font-weight: bold;
+  margin-left: 2px 0px;
+}
+
+/* Newsletter checkbox */
+.contact-form .subscribe {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: normal;
+}
+
+/* Submit Button */
+.contact-form button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 15px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin: 5px 0px;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+/* Radio buttons column layout */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 3px 0px;
+}
+
+.radio-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.message-purpose {
+  margin: 2px 0px 0px;
+}
+
+.form-container {
+  background-color: #f9f9f9;
+  padding: 0px;
+  border-radius: 8px;
+  padding: 0px 5px;
+}
+
+.employee-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
