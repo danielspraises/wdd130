@@ -452,3 +452,15 @@ form textarea {
   background: var(--secondary-color);
   color: white;
 }
+
+/* .contact-form.home {
+  max-width: 600px;
+} */
+
+.form-container.home {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
